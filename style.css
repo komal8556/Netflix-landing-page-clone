@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-grey: #2d2d2d;
+    --color-red: #e50914;
+
+    --font-Archivo: 'Archivo', sans-serif;
+    --font-Archivo-Black: 'Archivo Black', sans-serif;
+}
+
+/* ----------- */
+/* CSS reset */
+/* ------- */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    /* padding: 0; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button{
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* ---------------- */
+/* Utility classes */
+/* -------------- */
+
+.text-title{
+    font-size: 2rem;
+}
+
+.text-paragraph{
+    font-size: 1.125rem;
+}
+
+.text-paragraph-small{
+    font-size: 1rem;
+}
+
+.my-big{
+    padding-block: 3rem;
+}
+
+/* ----------------- */
+/* Main CSS styling */
+/* --------------- */
+
