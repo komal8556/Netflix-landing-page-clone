@@ -4,90 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix landing page clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/c8cef9428d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <img class="logo" src="" alt="">
-            <button class="sign-in-btn">Sign in</button>
+    <div class="hero-group">
+        <!-- <img src="/assets/hero-image.png" alt="Background image"> -->
+        <div class="hero-content">
+            <header class="header">
+                <div class="container">
+                    <div>
+                        <img class="logo" src="/assets/logo.png" alt="Netflix logo">
+                    </div>
+                    <div class="btn">
+                        <button class="sign-in-btn btn-red-small">Sign in</button>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="hero-section">
+                <div class="container">
+                    <h2 class="text-title">Unlimited movies, TV shows and more</h2> 
+                    <p class="text-paragraph-small mt-3">Watch anywhere. Cancel anytime.</p>
+                    <p class="text-paragraph mt-1">Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div class="input-group mt-1">
+                        <input class="email-input" type="email" placeholder="Email address">
+                        <div class="btn">
+                            <button class="get-started-btn btn-red">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </header>
+    </div>
+    <hr class="line">
 
-    <section class="hero-section">
-        <div class="container">
-           <h2>Unlimited movies, TV shows and more</h2> 
-           <p>Watch anywhere. Cancel anytime.</p>
-           <p>Ready to watch? Enter your email to create or restart your membership.</p>
-           <div class="input-group">
-                <input type="email" placeholder="Email address">
-                <button class="get-started-btn">Get Started</button>
-           </div>
-        </div>
-    </section>
-
-    <section class="enjoy-tv-section">
+    <section class="enjoy-tv-section my-big">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h3>Enjoy on your TV</h3>
-                    <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                    <h3 class="text-title">Enjoy on your TV</h3>
+                    <p class="text-paragraph mt-2">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
                 </div>
                 <div class="col">
+                    <img src="/assets/feature-1.png" alt="Television image">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="download-section">
+    <hr class="line">
+
+    <section class="download-section my-big">
         <div class="container">
             <div class="row">
-                <div class="col"></div>
                 <div class="col">
-                    <h3>Download your shows to watch offline</h3>  
-                    <p>Save your favourites easily and always have something to watch.</p>         
+                    <h3 class="text-title">Download your shows to watch offline</h3>  
+                    <p class="text-paragraph mt-2">Save your favourites easily and always have something to watch.</p>         
+                </div>
+                <div class="col">
+                    <img src="/assets/feature-2.png" alt="Mobile download image">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="watch-anywhere-section">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3>Watch everywhere</h3>
-                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-                </div>
-                <div class="col"></div>
-            </div>
-        </div>
-    </section>
+    <hr class="line">
 
-    <section class="create-profile-section">
+    <section class="watch-anywhere-section my-big">
         <div class="container">
             <div class="row">
-                <div class="col"></div>
                 <div class="col">
-                    <h3>Create profiles for kids</h3>
-                    <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+                    <h3 class="text-title">Watch everywhere</h3>
+                    <p class="text-paragraph mt-2">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                </div>
+                <div class="col">
+                    <img src="/assets/feature-3.png" alt="Different device image">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq-section">
+    <hr class="line">
+
+    <section class="create-profile-section my-big">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-title">Create profiles for kids</h3>
+                    <p class="text-paragraph mt-2">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+                </div>
+                <div class="col">
+                    <img src="/assets/feature-4.png" alt="Animated image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="line">
+
+    <section class="faq-section my-big">
         <div class="container">
             <div class="faq">
-                <h2 class="">Frequently Asked Questions</h2>
+                <h2 class="text-title">Frequently Asked Questions</h2>
                <ul class="faq-list">
                     <li clas="question-group">
                         <div class="question-title">
                             <p>What is Netflix?</p>
                             <button type="button" class="question-btn">
                                 <span class="plus-icon">
-                                    <i class="far fa-plus"></i>
+                                    <img src="/assets/plus-icon.svg" alt="Plus icon">
                                 </span>
                                 <span class="minus-icon">
-                                    <i class="far fa-minus"></i>
+                                    <img src="/assets/crose-icon.svg" alt="Crose icon">
                                 </span>
                             </button>
                         </div>
@@ -100,10 +130,10 @@
                             <p>How much does Netflix cost?</p>
                             <button type="button" class="question-btn">
                                 <span class="plus-icon">
-                                    <i class="far fa-plus"></i>
+                                    <img src="/assets/plus-icon.svg" alt="Plus icon">
                                 </span>
                                 <span class="minus-icon">
-                                    <i class="far fa-minus"></i>
+                                    <img src="/assets/crose-icon.svg" alt="Crose icon">
                                 </span>
                             </button>
                         </div>
@@ -116,10 +146,10 @@
                             <p>Where can I watch?</p>
                             <button type="button" class="question-btn">
                                 <span class="plus-icon">
-                                    <i class="far fa-plus"></i>
+                                    <img src="/assets/plus-icon.svg" alt="Plus icon">
                                 </span>
                                 <span class="minus-icon">
-                                    <i class="far fa-minus"></i>
+                                    <img src="/assets/crose-icon.svg" alt="Crose icon">
                                 </span>
                             </button>
                         </div>
@@ -132,10 +162,10 @@
                             <p>How do I cancel?</p>
                             <button type="button" class="question-btn">
                                 <span class="plus-icon">
-                                    <i class="far fa-plus"></i>
+                                    <img src="/assets/plus-icon.svg" alt="Plus icon">
                                 </span>
                                 <span class="minus-icon">
-                                    <i class="far fa-minus"></i>
+                                    <img src="/assets/crose-icon.svg" alt="Crose icon">
                                 </span>
                             </button>
                         </div>
@@ -148,10 +178,10 @@
                             <p>What can I watch on Netflix?</p>
                             <button type="button" class="question-btn">
                                 <span class="plus-icon">
-                                    <i class="far fa-plus"></i>
+                                    <img src="/assets/plus-icon.svg" alt="Plus icon">
                                 </span>
                                 <span class="minus-icon">
-                                    <i class="far fa-minus"></i>
+                                    <img src="/assets/crose-icon.svg" alt="Crose icon">
                                 </span>
                             </button>
                         </div>
@@ -164,10 +194,10 @@
                             <p>Is Netflix good for kids?</p>
                             <button type="button" class="question-btn">
                                 <span class="plus-icon">
-                                    <i class="far fa-plus"></i>
+                                    <img src="/assets/plus-icon.svg" alt="Plus icon">
                                 </span>
                                 <span class="minus-icon">
-                                    <i class="far fa-minus"></i>
+                                    <img src="/assets/crose-icon.svg" alt="Crose icon">
                                 </span>
                             </button>
                         </div>
@@ -185,7 +215,9 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <hr class="line">
+
+    <footer class="footer my-big">
         <div class="container">
             <div class="row">
                 <div class="col">
