@@ -175,7 +175,7 @@ a{
 
 /* Header */
 .logo{
-    width: 94px;
+    width: 5.22rem;
 }
 
 .header .container{
@@ -356,8 +356,16 @@ a{
 /* Laptop and bigger screen */
 @media (min-width: 58rem){
 
+    .hero-content .header .container{
+        max-width: 74rem;
+    }
+
     .hero-group{
         height: 100dvh;
+    }
+
+    .logo{
+        width: 8rem;
     }
 
     .hero-section{
